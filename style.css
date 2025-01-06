@@ -1,0 +1,435 @@
+/*
+Theme Name: 課題 - デモサイト
+Theme URI: https://test-starcraft.site/
+Author: Nohara
+Author URI: https://test-starcraft.site/
+Description: A custom theme for WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-custom-theme
+*/
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+p, table, blockquote, address, pre, iframe, form, figure, dl {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: inherit;
+}
+
+address {
+  font-style: inherit;
+}
+
+a {
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: inherit;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+svg, img, embed, object, iframe {
+  vertical-align: bottom;
+}
+
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+}
+
+button, [type=button], [type=reset], [type=submit] {
+  cursor: pointer;
+}
+
+button:disabled, [type=button]:disabled, [type=reset]:disabled, [type=submit]:disabled {
+  cursor: default;
+}
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+option {
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+table {
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td, th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #000;
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: #000;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, dt, th {
+  font-weight: bold;
+}
+
+button {
+  color: #000;
+}
+
+.l-container {
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* header */
+.l-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.l-header__logo a {
+  display: block;
+  width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-header {
+    padding: 20px;
+  }
+
+  .l-header__logo {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.u-device-sp {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .u-device-sp {
+    display: block;
+  }
+}
+
+.u-device-tablet {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .u-device-tablet {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .u-device-pc {
+    display: none;
+  }
+}
+
+/* blog */
+.p-blog ul {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  background: #fcf8f1;
+  padding: 60px 30px;
+}
+.post-meta .post-category {
+    margin-left: 10px;
+    color: #0073aa;
+}
+
+@media screen and (max-width: 800px) {
+  .p-blog ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-blog ul li {
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.p-blog ul li p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.p-blog ul li p span,.post-meta .category {
+  display: inline-block;
+  padding: 2px 10px;
+  background: gray;
+  color: #fff;
+  font-size: 12px;
+}
+
+.p-blog ul li img {
+  height: 160px;
+  object-fit: cover;
+}
+.post-thumbnail{
+	max-width: 450px;
+    margin: 4em auto;
+}
+
+/* profile */
+.p-profile {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f9fa;
+}
+
+.p-profile a {
+  display: inline-block;
+  padding: 20px 30px;
+  background: #3178b6;
+  color: #fff;
+  font-weight: 800;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .p-profile a {
+    font-size: 1.5rem;;
+  }
+}
+
+/* footer */
+.l-footer {
+  text-align: center;
+  background: #5cabf0;
+  color: #fff;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* profile-page */
+.p-main {
+  padding: 10px;
+}
+
+.p-main table {
+  margin: 0 auto 50px;
+}
+
+.p-main table th, td {
+  border: 2px solid gray;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.p-main table th {
+  background: #cadef8;
+}
